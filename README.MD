@@ -54,7 +54,7 @@ The network file is passed simply as a command line argument.
 (ex: `python3 degree.py Balaji_dataset.txt`)
 
 The multiple files generated for each network are then processed by gnuplot.
-For example, in the run.sh file, the command:
+For example, in the ``run.sh`` file, the command:
 `gnuplot  indegcount2019.gnuplot`
 generates the In degree plot comparing:
 * YEASTRACT 2019 Binding plus Expression
@@ -82,7 +82,7 @@ or the computation the 26 TFs with more/less co-regulators:
 
 Motif analysis
 ==============
-For the motif analysis, the run.sh script further divides the YEASTRACT networks with respect to the interaction environmental condition (e.g. Control, Stress, ...).
+For the motif analysis, the ``run.sh`` script further divides the YEASTRACT networks with respect to the interaction environmental condition (e.g. Control, Stress, ...).
 
 The user can then pass each of these networks individually to the ``motifs.py`` Python 3 script to call the gtrieScanner software (which extracts the triad enrichment) and process all the intermediate files.
 For a given network, it generates a .csv file with the Z-score of each of the 13 triad motifs to be easily open in a Spreadsheet.
